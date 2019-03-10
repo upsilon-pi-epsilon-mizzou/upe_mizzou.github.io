@@ -1,1 +1,157 @@
-project start
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  color: darkorange;
+  background: black;
+
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: center;
+  width: 100%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+   
+
+/* Add a card effect for articles */
+.card {
+  background-color: lightgray;
+  padding: 20px;
+  margin-top: 20px;
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+    
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Upsilon Pi Epsilon</h1>
+  <p>Mizzou Chapter</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Major Projects</a>
+  <a href="#">Tutoring</a>
+  <a href="#">Blog/News</a>
+  <a href="#">Sponsors/Partners</a>
+  <a href="#" style="float:right">About Us</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Partnering with Girls Who Code</h2>
+      <h5>Helping to diversify code.</h5>
+      <div><img src="images/girl_coder.jpg" class="center" style="width:75%"> </div>
+      <p>Our local chapter is teaming up with Girls Who Code as part of a larger mission to bring diversity to the field of computer science and give more opportunities to aspiring students. This is being realized at schools across Columbia, MO with regular sessions that enlighten students on the many applications of the field while also providing support in learning the many elements of software development. </p>
+    </div>
+    <div class="card">
+      <h2>Tutors Now Available</h2>
+      <h5>UPE@Mizzou is working to help new students in the field of software development</h5>
+      <div ><img src="images/glasses_code.jpg" class="center" style="width:75%;"></div>
+      <p>Stumped...UPE@Mizzou has got your back</p>
+      <p>We know the fields of computer science and engineering can be confusing. Therefore as students we understand the difficulty of handling some of the more obscure concepts. That's why some of our more astute members are donating their time every Tuesday at 6pm to help you get ahead and stay on track.</p>
+    </div>
+          <div class="card">
+      <h2>Engineering Career Day</h2>
+      <h5>March 13 starting at 9am. Located at Ketcham auditorium in Lafferre Hall</h5>
+      <div ><img src="images/lafferre.jpg" class="center" style="width:75%;"></div>
+      <p>Meet employers and broaden your career opportunities</p>
+      <p>As a special highlight to engineers week at Mizzou, the university will be holding Engineering Career Day to help bring students and employers together. This will include a mix of discussion and networking to help students with their career goals. Students must RVSP on Handshake to attend. </p>
+    </div>
+  </div>
+  
+</div>
+
+<div class="footer">
+  <h2>UPE</h2>
+    <a href="#" style="float:right">Contact Us</a>
+</div>
+
+</body>
+</html>
