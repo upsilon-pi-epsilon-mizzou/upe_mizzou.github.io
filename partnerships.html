@@ -80,9 +80,8 @@ background-color:#333;
     font-family:"Orbitron";
     text-align: center;
     display:grid; 
-    line-height: 22%;
-    padding-top:30px;
-    
+    padding-top:10px;
+    padding-left:70px;
 }
     
 .column_right{   
@@ -90,23 +89,24 @@ background-color:#333;
     position: relative;
     background-color:#333;
     color: white;
-    font-family:"Bungee Shade";
-    font-size: 30px;
+    font-family:"Orbitron";
     text-align: center;
     display:grid; 
-    width:60%;
-    bottom: auto;
-    padding-top: 20px;
-    line-height: 30%;
+    width:40%;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right:70px;
 }
     .column_left h1{
         font-size:55px;
         font-family:"Bungee Shade";
     }
-    .column_left h3{
-        font-size: 30px;
+   
+    .column_right h1{
+        font-size: 55px;
+        font-family:"Bungee Shade";
     }
-     
+    
 
 /* Clear floats after the columns */
 .row:after {
@@ -167,24 +167,7 @@ bottom: 0;
         left: 190px;
         top: 280px;   
 }
- /*
-    .typewriter h2 {
-  overflow: hidden; 
-  border-right: .15em solid orange;
-  white-space:nowrap; single line 
-  margin: 0 auto;  
-  letter-spacing: .20em; 
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-        font-family: "Orbitron";
-        color: orange;
-        font-size:30px;
-        position: absolute;
-        left: 550px;
-        top: 375px;   
-}
-    */
+
     .footer p{
         float: right;
         right: 10px;
@@ -204,18 +187,40 @@ bottom: 0;
         width:4%;
         
     }
+    
+    .sponsor_card{
+        height=50px;
+        width=50px;
+        background-color:azure;
+        color:black;
+        border-style:none;
+        border-radius:20px;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    .partner_card{
+        height=50px;
+        width=50px;
+        background-color:azure;
+        color:black;
+        border-style: none;
+        border-radius:20px;
+        text-decoration:none;
+        text-align: center;
+    }
+    
+    .sponsor_card a{
+        color: black;
+        text-decoration:none;
+    }
+    
+    .partner_card a{
+        color: black;
+        text-decoration:none;
+    }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
-}
 </style>
   
 </head>
@@ -234,45 +239,58 @@ bottom: 0;
     
 <!--MAIN-SECTION---------------------------------------------------------------------------------------------->
 <div class="row">
-  <div class=main>
-          <img style="width:100%" src="images/quadrangle_4.jpg">
-                <div class="type_div">
-          <div class="typewriter">
-             <h1>Upsilon Pi Epsilon</h1>
-             <!--<h2> Gamma Chapter</h2>-->
-          </div>
-                </div>
-  </div>
+<div class="column_left">
+    <h1> Past Sponsors</h1>
+    
+        <div class="sponsor_card"> 
+            <a href="https://www.shelterinsurance.com/"><h2> Shelter Insurance </h2>  </a>
+    </div>
+        <p> </p>
+    <div class="sponsor_card"> 
+        <a href="https://www.veteransunited.com/"> <h2> Veterans United </h2> </a>
+    </div>
+    <p> </p>
+     <div class="sponsor_card"> 
+         <a href="https://www.aclara.com/"><h2> Aclara </h2> </a>
+    </div>
+        <p> </p>
+   
+    <div class="sponsor_card">
+        <a href="https://www.boeing.com/"> <h2> Boeing </h2></a>
+    </div>
+    <p> </p>
+     <div class="sponsor_card"> 
+         <a href="https://www.garmin.com/en-US/"><h2> Garmin </h2>  </a>
+    </div>
+    <p> </p>
+     <div class="sponsor_card"> 
+         <a href="https://www.ameren.com/"><h2> Ameren </h2>  </a>
+    </div>
+        <p> </p>
+             <div class="sponsor_card"> 
+         <a href="https://www.att.com/"><h2> AT&T </h2>  </a>
+    </div>
+    </div>
+    
+    <div class="column_right">
+    <h1>Partners</h1>
+        <div class="partner_card">
+         <a href="https://missouri.edu/"><h3> University of Missouri</h3> </a>  
+    </div>
+        <p> </p> 
+    <div class="partner_card">
+                  <a href="http://acm.missouri.edu/"><h3> Mizzou Computing Association</h3> </a>
+    </div>
+        <p> </p>
+              <div class="partner_card">
+                  <a href="https://www.facebook.com/MizzouIEEE"> <h3> Mizzou IEEE</h3></a>
+    </div>
+   
+    
 </div>
 <!--MAIN-SECTION-END------------------------------------------------------------------------------------------>
 
-<!--AGENDA-SECTION-------------------------------------------------------------------------------------------->
- <div class="row">
-     <div class="column_left">
-     <h1> Officers </h1>
-         <p>   </p>
-         <div style=""> <h3> Ben Frailey</h3> 
-             <h2> President </h2></div>
-         <p> </p>
-         <div>  <h3> Carmel Braga</h3>
-         <h2> Vice President </h2></div>
-         <p> </p>
-        <div>  <h3> Sara Wooldridge</h3>
-         <h2> Secretary </h2></div>
-         <p> </p>
-        <div>    <h3> Brad Boutaugh</h3>
-         <h2> Treasurer </h2></div>
-         <p> </p>
-      <div>   <h3> Matt Hudson </h3>
-         <h2> Historian </h2> </div>
-      
-     </div>
-     <div class="column_right">
-         <h1>Schedule</h1>
-     <iframe src="https://calendar.google.com/calendar/embed?src=hcrnma378r2tfcgjeupj60rggg%40group.calendar.google.com&ctz=America%2FChicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-     </div>
-  </div>
-<!--AGENDA-SECTION-END----------------------------------------------------------------------------------------->
+
  
 <!--FOOTER-SECTION--------------------------------------------------------------------------------------------->
 <footer class="footer">

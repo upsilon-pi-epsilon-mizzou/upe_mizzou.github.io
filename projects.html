@@ -7,6 +7,15 @@
 <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet"> 
     
 <link href="https://fonts.googleapis.com/css?family=Audiowide|Black+Ops+One|Bungee+Inline|Bungee+Shade&display=swap" rel="stylesheet">
+    
+    
+          <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
 
 <style>
 box-sizing: border-box;
@@ -16,6 +25,14 @@ font-family: 'Audiowide', cursive;
 font-family: 'Black Ops One', cursive;
 font-family: 'Bungee Inline', cursive;
 font-family: 'Bungee Shade', cursive;
+    
+
+  
+  .carousel-inner img {
+      width: 75%;
+      height: 75%;
+  }
+ 
 
 
     ul {
@@ -71,42 +88,6 @@ background-color:#333;
   color: black;
 }
 
-.column_left{   
-  float:left;
-  width: 40%;
-    position: relative;
-    background-color:#333;
-    color: white;
-    font-family:"Orbitron";
-    text-align: center;
-    display:grid; 
-    line-height: 22%;
-    padding-top:30px;
-    
-}
-    
-.column_right{   
-  float: right;
-    position: relative;
-    background-color:#333;
-    color: white;
-    font-family:"Bungee Shade";
-    font-size: 30px;
-    text-align: center;
-    display:grid; 
-    width:60%;
-    bottom: auto;
-    padding-top: 20px;
-    line-height: 30%;
-}
-    .column_left h1{
-        font-size:55px;
-        font-family:"Bungee Shade";
-    }
-    .column_left h3{
-        font-size: 30px;
-    }
-     
 
 /* Clear floats after the columns */
 .row:after {
@@ -115,12 +96,7 @@ background-color:#333;
   clear: both;
   position: relative;
 }
-    
-    .agenda{
-        position: relative;
-        width: 100%;
-        float: right;
-    }
+
 
 /* Footer */
 footer {
@@ -131,8 +107,7 @@ color: orange;
 font-family:"Orbitron";
 text-align: center;
     position: relative;
-bottom: 0;
-    padding: 40px 40px 40px 40px;
+    padding: 200px 40px 40px 40px;
 }
 
     .footer a{
@@ -151,40 +126,25 @@ bottom: 0;
     .type_div {
   display: flex;  
 }
-    .typewriter h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .20em; 
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+    
+    .slide_info{
+        padding: 10px 10px 10px 10px;
+            float:right;
+            top: 10px;
+            right: 100px;
+            color: black;
+        background-color: aliceblue;
+        border-radius:20px;
+        text-align: center;
+        line-height: normal;
         font-family: "Orbitron";
-        color: orange;
-        font-size:80px;
-        position: absolute;
-        left: 190px;
-        top: 280px;   
-}
- /*
-    .typewriter h2 {
-  overflow: hidden; 
-  border-right: .15em solid orange;
-  white-space:nowrap; single line 
-  margin: 0 auto;  
-  letter-spacing: .20em; 
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-        font-family: "Orbitron";
-        color: orange;
-        font-size:30px;
-        position: absolute;
-        left: 550px;
-        top: 375px;   
-}
-    */
+            position: relative;
+        width: 600px;
+        
+        
+    }
+
+
     .footer p{
         float: right;
         right: 10px;
@@ -200,8 +160,8 @@ bottom: 0;
     
     .github_icon{
         
-        height:4%;
-        width:4%;
+        height:10%;
+        width:10%;
         
     }
 
@@ -223,7 +183,7 @@ bottom: 0;
     
 <!--BODY----------------------------------------------------------------------------------------------------->
 <body>
-<!--NAVIGATION-BAR__----------------------------------------------------------------------------------------->
+<!--NAVIGATION-BAR------------------------------------------------------------------------------------------->
 <nav class="topnav">
         <a href="index.html">UPE</a>
         <a href="projects.html">Projects</a>
@@ -233,54 +193,51 @@ bottom: 0;
 <!--NAVIGATION-BAR-END---------------------------------------------------------------------------------------->
     
 <!--MAIN-SECTION---------------------------------------------------------------------------------------------->
-<div class="row">
-  <div class=main>
-          <img style="width:100%" src="images/quadrangle_4.jpg">
-                <div class="type_div">
-          <div class="typewriter">
-             <h1>Upsilon Pi Epsilon</h1>
-             <!--<h2> Gamma Chapter</h2>-->
-          </div>
-                </div>
+ 
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/glasses_code.jpg" alt="Code" width="900" height="600">
+        <div class="slide_info"> <h2> Educational Seminars</h2>
+        <p>We are currently providing monthly presentations on unique topics from various faculty and guest speakers for students at Mizzou.</p></div>
+        <div style="padding: 40px 40px 40px 40px"></div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/girl_coder.jpg" alt="Girl" width="900" height="600">
+                <div class="slide_info"> <h2> Girls Who Code & DevelopHER Programs</h2>
+        <p>We are partnering with the Girls Who Code and DevelopHER programs to help inspire girls towards careers in software development. Guidance, education, and various resources are provided to female students across Columbia, MO as part of our coordination with the aforementioned organizations.</p></div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/lafferre.jpg" alt="Lafferre" width="900" height="600">
+            <div class="slide_info"> <h2> Social Networking</h2>
+        <p>UPE is setting up company tours, networking events, and career preparation seminars to help members better develop their career plans.</p></div>
+    </div>
   </div>
+
+        <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
 </div>
+
 <!--MAIN-SECTION-END------------------------------------------------------------------------------------------>
 
-<!--AGENDA-SECTION-------------------------------------------------------------------------------------------->
- <div class="row">
-     <div class="column_left">
-     <h1> Officers </h1>
-         <p>   </p>
-         <div style=""> <h3> Ben Frailey</h3> 
-             <h2> President </h2></div>
-         <p> </p>
-         <div>  <h3> Carmel Braga</h3>
-         <h2> Vice President </h2></div>
-         <p> </p>
-        <div>  <h3> Sara Wooldridge</h3>
-         <h2> Secretary </h2></div>
-         <p> </p>
-        <div>    <h3> Brad Boutaugh</h3>
-         <h2> Treasurer </h2></div>
-         <p> </p>
-      <div>   <h3> Matt Hudson </h3>
-         <h2> Historian </h2> </div>
-      
-     </div>
-     <div class="column_right">
-         <h1>Schedule</h1>
-     <iframe src="https://calendar.google.com/calendar/embed?src=hcrnma378r2tfcgjeupj60rggg%40group.calendar.google.com&ctz=America%2FChicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-     </div>
-  </div>
-<!--AGENDA-SECTION-END----------------------------------------------------------------------------------------->
- 
 <!--FOOTER-SECTION--------------------------------------------------------------------------------------------->
 <footer class="footer">
     <div class="row">
       <a href="index.html" style="padding-right: 850px" >UPE</a> 
-        <a href="https://www.facebook.com/MizzouUPE"><img class="facebook_icon" src="images/f_logo_RGB-Blue_144.png"></a>
-        <a href="https://github.com/upsilon-pi-epsilon-mizzou"><img class="github_icon" src="images/Octocat.png"></a>
-        
     </div>
 </footer>
 <!--FOOTER-SECTION-END--------------------------------------------------------------------------------------->
